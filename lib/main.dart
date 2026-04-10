@@ -12,9 +12,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vamos cozinhar?',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        appBarTheme: AppBarTheme(backgroundColor: Colors.blueAccent),
+        colorScheme: ColorScheme(
+          brightness: Brightness.light,
+          primary: Colors.pink,
+          onPrimary: Colors.pink,
+          secondary: Colors.amber,
+          onSecondary: Colors.amber,
+          error: Colors.redAccent,
+          onError: Colors.redAccent,
+          surface: Color.fromRGBO(255, 253, 247, 1),
+          onSurface: Colors.black,
+        ),
         fontFamily: 'Raleway',
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
         textTheme: ThemeData.light().textTheme.copyWith(
           titleMedium: TextStyle(fontSize: 20, fontFamily: 'RobotoCondensed'),
         ),
